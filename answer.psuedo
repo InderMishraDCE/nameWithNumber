@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="userName" placeholder="User Name"  />   
+
+<button onclick="myFunction('name')">Get Answer</button>       
+
+<p id="myAnswer"></p>
+
+<script>
+
+function myFunction(name) {
+    var name = document.getElementById("userName").value;      
+    var number = Math.floor(Math.random()*(15-6+1)+6);
+
+    var res ="\"" + String(name) +" " +
+   
+    String(number) + "\"" ;
+    document.getElementById("myAnswer").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
